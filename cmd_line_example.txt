@@ -1,0 +1,17 @@
+cd grid20x20.f2 && \
+../AbstractionSampling \
+	-iB 5 \
+	-fUAI grid20x20.f2.uai \
+	-fVO grid20x20.f2.uai.elim \
+	-fEV grid20x20.f2.uai.evid \
+	-a equalDistQB4_dfs \
+	-nAbs 1024 \
+	-t 10 \
+	-proper 0 \
+	-uaiOut UAI-OUTPUT.PR \
+	-treeType AO \
+	1> ./STDOUT.stdout \
+	2> ./STDERR.stderr \
+	&& \
+cd .. && \
+echo "done"
